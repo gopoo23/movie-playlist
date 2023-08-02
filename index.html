@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Playlist Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Playlist Website</h1>
+        <div>
+            <input type="text" id="searchInput" placeholder="Search movies...">
+            <button onclick="searchMovies()">Search</button>
+        </div>
+        <div id="movieResults"></div>
+        <div>
+            <h2>Create Playlist</h2>
+            <input type="text" id="playlistName" placeholder="Playlist Name">
+            <input type="checkbox" id="isPrivate">Private Playlist
+            <button onclick="createPlaylist()">Create Playlist</button>
+        </div>
+        <div id="playlistSection">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
